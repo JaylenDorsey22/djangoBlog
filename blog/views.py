@@ -1,5 +1,6 @@
 from django.shortcuts import render, HttpResponse
 from .models import Post
+from users import views
 
 # Create your views here.
 def home(request):
@@ -17,4 +18,3 @@ def about(request):
 def profile(request):
     return render(request, 'blog/profile.html')
 
-    
